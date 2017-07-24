@@ -146,6 +146,12 @@ namespace redis_Demo
         [Description("fd6")]
         Folder6,
 
+        /// <summary>
+        /// 测试目录6
+        /// </summary>
+        [Description("AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:1")]
+        Folder7,
+
     }
 
 }

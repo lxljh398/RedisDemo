@@ -13,21 +13,22 @@ namespace redis_Demo
         static void Main(string[] args)
         {
             #region 基础数据
-            Student student1 = new Student() { Id = 1, Name = "张三", Class = "三年一班" };
-            Student student2 = new Student() { Id = 2, Name = "李四", Class = "三年二班" };
-            Student student3 = new Student() { Id = 3, Name = "王五", Class = "三年三班" };
-            Student student4 = new Student() { Id = 4, Name = "赵六", Class = "三年四班" };
-            Student student5 = new Student() { Id = 5, Name = "甲甲", Class = "三年五班" };
-            Student student6 = new Student() { Id = 6, Name = "乙乙", Class = "三年六班" };
-            List<Student> list = new List<Student>();
-            list.Add(student1);
-            list.Add(student2);
-            list.Add(student3);
+            //Student student1 = new Student() { Id = 1, Name = "张三", Class = "三年一班" };
+            //Student student2 = new Student() { Id = 2, Name = "李四", Class = "三年二班" };
+            //Student student3 = new Student() { Id = 3, Name = "王五", Class = "三年三班" };
+            //Student student4 = new Student() { Id = 4, Name = "赵六", Class = "三年四班" };
+            //Student student5 = new Student() { Id = 5, Name = "甲甲", Class = "三年五班" };
+            //Student student6 = new Student() { Id = 6, Name = "乙乙", Class = "三年六班" };
+            //List<Student> list = new List<Student>();
+            //list.Add(student1);
+            //list.Add(student2);
+            //list.Add(student3);
             #endregion
 
             #region String
             ////添加单个
-            //RedisHelper.StringSet("string", "hello world", 6, RedisFolderEnum.Folder1);
+            //RedisHelper.StringSet("string4", "hello world1", 6, RedisFolderEnum.Folder7,RedisDBEnum.One);
+
 
             ////批量添加
             //var keys = new[] { "string1", "string2", "string3" };
@@ -135,17 +136,31 @@ namespace redis_Demo
             #endregion
 
             #region key
-            var v = RedisHelper.KeyExists("hash");
-            Console.WriteLine(v);
+            //var v = RedisHelper.KeyExists("hash");
+            //Console.WriteLine(v);
 
-            RedisHelper.KeyExpire("hash", 10);
+            //RedisHelper.KeyExpire("hash", 10);
 
-            RedisHelper.KeyDelete("zsort", RedisFolderEnum.Folder1, RedisDBEnum.Ten);
+            //RedisHelper.KeyDelete("zsort", RedisFolderEnum.Folder1, RedisDBEnum.Ten);
 
-            RedisHelper.KeyDelete(new List<string>() { "string", "string3" });
+            //RedisHelper.KeyDelete(new List<string>() { "string", "string3" });
 
-            RedisHelper.KeyRename("string", "gnirts", RedisFolderEnum.Folder1, RedisDBEnum.One);
+            //RedisHelper.KeyRename("string", "gnirts", RedisFolderEnum.Folder1, RedisDBEnum.One);
             #endregion
+
+
+
+            //var a= RedisHelper.StringGet("AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:1",RedisFolderEnum.Folder7);      
+
+            //var a = RedisHelper.StringGet("q\x1C\xD3\x89\xEE>\xC7<\x90\xCB\xC9\xBFo\xC7\x8A\xA051");
+            for (int i = 1; i < 1000; i++)
+            {
+                //var a = RedisHelper.StringGet("q\x1C\xD3\x89\xEE>\xC7<\x90\xCB\xC9\xBFo\xC7\x8A\xA051");
+                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:{i}");
+            }
+
+            RedisHelper.StringSet("AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:60", "0");
+
 
             Console.WriteLine();
             Console.ReadLine();
