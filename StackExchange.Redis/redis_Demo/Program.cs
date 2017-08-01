@@ -157,9 +157,13 @@ namespace redis_Demo
             {
                 //var a = RedisHelper.StringGet("q\x1C\xD3\x89\xEE>\xC7<\x90\xCB\xC9\xBFo\xC7\x8A\xA051");
                 RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:{i}");
-            }
 
-            RedisHelper.StringSet("AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:60", "0");
+                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.TableCoinsStatistic.DayTakeCoins:{i}");
+                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.TableCoinsStatistic.DayPutCoins:{i}");
+                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.CoinsDayStatistic.DayTakeCoins:{i}");
+                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.CoinsDayStatistic.DayPutCoins:{i}");
+                
+            }
 
 
             Console.WriteLine();
