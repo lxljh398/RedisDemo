@@ -16,7 +16,7 @@ namespace RedisEdit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Redis处理());
+            Application.Run(new RedisEdit());
         }
     }
 }

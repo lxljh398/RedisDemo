@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace RedisEdit
 {
-    public partial class Redis处理 : Form
+    public partial class RedisEdit : Form
     {
-        public Redis处理()
+        public RedisEdit()
         {
             InitializeComponent();
         }
@@ -21,14 +21,18 @@ namespace RedisEdit
         private void btnGet_Click(object sender, EventArgs e)
         {
             string redisKey = this.txtkey.Text + ":" + this.txtUserId.Text;
-            var a = RedisHelper.StringGet(redisKey);
-            this.lblValue.Text = a;
+            var value = RedisHelper.StringGet(redisKey);
+            if (value != null)
+                this.lblValue.Text = value;
+            else
+                this.lblValue.Text = "不存在";
         }
 
         private void btnSet_Click(object sender, EventArgs e)
         {
             string redisKey = this.txtkey.Text + ":" + this.txtUserId.Text;
             RedisHelper.StringSet(redisKey, this.txtSetValue.Text);
+            DialogResult dr = MessageBox.Show("OK");
         }
 
         private void btndel_Click(object sender, EventArgs e)
@@ -39,6 +43,7 @@ namespace RedisEdit
             {
                 RedisHelper.KeyDelete(redisKey + i.ToString());
             }
+            DialogResult dr = MessageBox.Show("OK");
         }
     }
 }

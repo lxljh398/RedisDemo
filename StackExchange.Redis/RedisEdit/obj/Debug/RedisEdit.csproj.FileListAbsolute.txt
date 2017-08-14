@@ -9,5 +9,4 @@ D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\Newtonsoft.Jso
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\StackExchange.Redis.xml
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.exe
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.pdb
-D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.Redis处理.resources
-D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.csprojResolveAssemblyReference.cache
+D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.RedisEdit.resources
