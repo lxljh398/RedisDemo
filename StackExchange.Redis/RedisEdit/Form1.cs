@@ -45,5 +45,22 @@ namespace RedisEdit
             }
             DialogResult dr = MessageBox.Show("OK");
         }
+
+        private void selDel_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < chklistKey.Items.Count; i++)
+            {
+                if (chklistKey.GetItemChecked(i))
+                {
+                    string redisKey = "AtomicOperation_YChain.AlphaWallet.Model.PO."+ chklistKey.Items[i].ToString() + ":";
+                    int maxDelValue = int.Parse(this.txtSelDelMaxValue.Text);
+                    for (int j = 1; j < maxDelValue; j++)
+                    {
+                        RedisHelper.KeyDelete(redisKey + j.ToString());
+                    }                    
+                }
+            }
+            DialogResult dr = MessageBox.Show("OK");
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Configuration;
 using System.Reflection;
 using System.Text;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace redis_Demo
 {
@@ -48,93 +49,18 @@ namespace redis_Demo
             }
             var options = ConfigurationOptions.Parse(connectionString);
             options.Password = _pwd;
-            return ConnectionMultiplexer.Connect(options);
-        }
-        #endregion
+            var connect = ConnectionMultiplexer.Connect(options);
 
-        #region 辅助方法
-        /// <summary>
-        /// 获取要操作的库
-        /// </summary>
-        /// <param name="db">库，0和-1都是第一个库，1是第二个库...</param>
-        /// <returns></returns>
-        private static int GetOperationDB(RedisDBEnum db)
-        {
-            if (db == RedisDBEnum.Default)
-            {
-                return _store_db;
-            }
-            else
-            {
-                return (int)db;
-            }
-        }
-
-        private static string ConvertJson<T>(T value)
-        {
-            string result = value is string ? value.ToString() : JsonConvert.SerializeObject(value);
-            return result;
-        }
-
-        private static T ConvertObj<T>(RedisValue value)
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                return default(T);
-            }
-            else
-            {
-                return JsonConvert.DeserializeObject<T>(value);
-            }
-        }
-
-        private static List<T> ConvetList<T>(RedisValue[] values)
-        {
-            List<T> result = new List<T>();
-            foreach (var item in values)
-            {
-                var model = ConvertObj<T>(item);
-                if (model != null)
-                    result.Add(model);
-            }
-            return result;
-        }
-
-        private static RedisKey[] ConvertRedisKeys(List<string> redisKeys, string prefix)
-        {
-            if (string.IsNullOrEmpty(prefix))
-            {
-                return redisKeys.Select(redisKey => (RedisKey)redisKey).ToArray();
-            }
-            else
-            {
-                return redisKeys.Select(redisKey => (RedisKey)(prefix + ":" + redisKey)).ToArray();
-            }
-        }
-
-        /// <summary>
-        /// 获得枚举的Description
-        /// </summary>
-        /// <param name="value">枚举值</param>
-        /// <param name="nameInstead">当枚举值没有定义DescriptionAttribute，是否使用枚举名代替，默认是使用</param>
-        /// <returns>枚举的Description</returns>
-        private static string GetDescription(this Enum value, Boolean nameInstead = true)
-        {
-            Type type = value.GetType();
-            string name = Enum.GetName(type, value);
-            if (name == null)
-            {
-                return null;
-            }
-
-            FieldInfo field = type.GetField(name);
-            DescriptionAttribute attribute = Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute)) as DescriptionAttribute;
-
-            if (attribute == null && nameInstead == true)
-            {
-                return name;
-            }
-            return attribute == null ? null : attribute.Description;
+            //注册如下事件
+            connect.ConnectionFailed += MuxerConnectionFailed;
+            connect.ConnectionRestored += MuxerConnectionRestored;
+            connect.ErrorMessage += MuxerErrorMessage;
+            connect.ConfigurationChanged += MuxerConfigurationChanged;
+            connect.HashSlotMoved += MuxerHashSlotMoved;
+            connect.InternalError += MuxerInternalError;
+            connect.ConfigurationChangedBroadcast += MuxerConfigurationChangedBroadcast;
+                        
+            return connect;
         }
         #endregion
 
@@ -734,6 +660,325 @@ namespace redis_Demo
             return Manager.GetDatabase(GetOperationDB(db)).SortedSetLength(string.IsNullOrEmpty(fd) ? key : fd + ":" + key);
         }
         #endregion
+
+        #region Lock
+
+        #endregion
+
+        #region 发布订阅
+
+        #region 同步
+
+        /// <summary>
+        /// 订阅
+        /// </summary>
+        /// <param name="subChannel"></param>
+        /// <param name="handler"></param>
+        public static void Subscribe(string subChannel, Action<RedisChannel, RedisValue> handler = null)
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            sub.Subscribe(subChannel, (channel, message) =>
+            {
+                if (handler == null)
+                {
+                    Console.WriteLine(subChannel + " 订阅收到消息：" + message);
+                }
+                else
+                {
+                    handler(channel, message);
+                }
+            });
+        }
+
+        /// <summary>
+        /// 发布
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="channel"></param>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public static long Publish<T>(string channel, T msg)
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            return sub.Publish(channel, ConvertJson(msg));
+        }
+
+        /// <summary>
+        /// 取消订阅
+        /// </summary>
+        /// <param name="channel"></param>
+        public static void Unsubscribe(string channel)
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            sub.Unsubscribe(channel);
+        }
+
+        /// <summary>
+        /// 取消全部订阅
+        /// </summary>
+        public static void UnsubscribeAll()
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            sub.UnsubscribeAll();
+        }
+
+        #endregion 发布订阅
+
+        #region 异步
+
+        /// <summary>
+        /// 订阅
+        /// </summary>
+        /// <param name="subChannel"></param>
+        /// <param name="handler"></param>
+        public static async Task SubscribeAsync(string subChannel, Action<RedisChannel, RedisValue> handler = null)
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            await sub.SubscribeAsync(subChannel, (channel, message) =>
+            {
+                if (handler == null)
+                {
+                    Console.WriteLine(subChannel + " 订阅收到消息：" + message);
+                }
+                else
+                {
+                    handler(channel, message);
+                }
+            });
+        }
+
+        /// <summary>
+        /// 发布
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="channel"></param>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public static async Task<long> PublishAsync<T>(string channel, T msg)
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            return await sub.PublishAsync(channel, ConvertJson(msg));
+        }
+
+        /// <summary>
+        /// 取消订阅
+        /// </summary>
+        /// <param name="channel"></param>
+        public static async Task UnsubscribeAsync(string channel)
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            await sub.UnsubscribeAsync(channel);
+        }
+
+        /// <summary>
+        /// 取消全部订阅
+        /// </summary>
+        public static async Task UnsubscribeAllAsync()
+        {
+            ISubscriber sub = _redis.GetSubscriber();
+            await sub.UnsubscribeAllAsync();
+        }
+
+        #endregion 发布订阅
+
+        #endregion
+
+        #region 事件
+        /// <summary>
+        /// 重新配置广播时（通常意味着主从同步更改）
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void MuxerConfigurationChangedBroadcast(object sender, EndPointEventArgs e)
+        {
+            Console.WriteLine($"{nameof(MuxerConfigurationChangedBroadcast)}: {e.EndPoint}");
+        }
+
+
+        /// <summary>
+        /// 配置更改时
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void MuxerConfigurationChanged(object sender, EndPointEventArgs e)
+        {
+            Console.WriteLine("Configuration changed: " + e.EndPoint);
+        }
+
+        /// <summary>
+        /// 发生内部错误时（主要用于调试）
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void MuxerErrorMessage(object sender, RedisErrorEventArgs e)
+        {
+            Console.WriteLine("ErrorMessage: " + e.Message);
+        }
+
+        /// <summary>
+        /// 重新建立连接之前的错误
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void MuxerConnectionRestored(object sender, ConnectionFailedEventArgs e)
+        {
+            Console.WriteLine("ConnectionRestored: " + e.EndPoint);
+        }
+
+        /// <summary>
+        /// 连接失败 ， 如果重新连接成功你将不会收到这个通知
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void MuxerConnectionFailed(object sender, ConnectionFailedEventArgs e)
+        {
+            Console.WriteLine("重新连接：Endpoint failed: " + e.EndPoint + ", " + e.FailureType + (e.Exception == null ? "" : (", " + e.Exception.Message)));
+        }
+
+        /// <summary>
+        /// 更改集群时
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void MuxerHashSlotMoved(object sender, HashSlotMovedEventArgs e)
+        {
+            Console.WriteLine("HashSlotMoved:NewEndPoint" + e.NewEndPoint + ", OldEndPoint" + e.OldEndPoint);
+        }
+
+        /// <summary>
+        /// redis类库错误
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void MuxerInternalError(object sender, InternalErrorEventArgs e)
+        {
+            Console.WriteLine("InternalError:Message" + e.Exception.Message);
+        }
+
+        #endregion
+
+        #region 辅助方法
+        /// <summary>
+        /// 获取要操作的库
+        /// </summary>
+        /// <param name="db">库，0和-1都是第一个库，1是第二个库...</param>
+        /// <returns></returns>
+        private static int GetOperationDB(RedisDBEnum db)
+        {
+            if (db == RedisDBEnum.Default)
+            {
+                return _store_db;
+            }
+            else
+            {
+                return (int)db;
+            }
+        }
+
+        private static string ConvertJson<T>(T value)
+        {
+            string result = value is string ? value.ToString() : JsonConvert.SerializeObject(value);
+            return result;
+        }
+
+        private static T ConvertObj<T>(RedisValue value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return default(T);
+            }
+            else
+            {
+                return JsonConvert.DeserializeObject<T>(value);
+            }
+        }
+
+        private static List<T> ConvetList<T>(RedisValue[] values)
+        {
+            List<T> result = new List<T>();
+            foreach (var item in values)
+            {
+                var model = ConvertObj<T>(item);
+                if (model != null)
+                    result.Add(model);
+            }
+            return result;
+        }
+
+        private static RedisKey[] ConvertRedisKeys(List<string> redisKeys, string prefix)
+        {
+            if (string.IsNullOrEmpty(prefix))
+                return redisKeys.Select(redisKey => (RedisKey)redisKey).ToArray();
+            else
+                return redisKeys.Select(redisKey => (RedisKey)(prefix + ":" + redisKey)).ToArray();
+        }
+
+        /// <summary>
+        /// 获得枚举的Description
+        /// </summary>
+        /// <param name="value">枚举值</param>
+        /// <param name="nameInstead">当枚举值没有定义DescriptionAttribute，是否使用枚举名代替，默认是使用</param>
+        /// <returns>枚举的Description</returns>
+        private static string GetDescription(this Enum value, Boolean nameInstead = true)
+        {
+            Type type = value.GetType();
+            string name = Enum.GetName(type, value);
+            if (name == null)
+            {
+                return null;
+            }
+            FieldInfo field = type.GetField(name);
+            DescriptionAttribute attribute = Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute)) as DescriptionAttribute;
+            if (attribute == null && nameInstead == true)
+            {
+                return name;
+            }
+            return attribute == null ? null : attribute.Description;
+        }
+        /// <summary>
+        /// 创建事物
+        /// </summary>
+        /// <returns></returns>
+        public static ITransaction CreateTransaction()
+        {
+            return Manager.GetDatabase().CreateTransaction();
+        }
+        /// <summary>
+        /// 获取主机
+        /// </summary>
+        /// <param name="hostAndPort"></param>
+        /// <returns></returns>
+        public static IServer GetServer(string hostAndPort)
+        {
+            return Manager.GetServer(hostAndPort);
+        }
+
+        private static T Do<T>(Func<IDatabase, T> func)
+        {
+            var database = Manager.GetDatabase();
+            return func(database);
+        }
+
+        /// <summary>
+        /// 获取所有key
+        /// </summary>
+        /// <param name="redisKeys"></param>
+        /// <returns></returns>
+        private static RedisKey[] ConvertRedisKeys(List<string> redisKeys)
+        {
+            return redisKeys.Select(redisKey => (RedisKey)redisKey).ToArray();
+        }
+
+        /// <summary>
+        /// 转化为timespan
+        /// </summary>
+        /// <param name="expTime">过期时间，秒</param>
+        /// <returns></returns>
+        public static TimeSpan ToTimeSpan(double expTime)
+        {
+            return DateTime.Now.AddSeconds(expTime) - DateTime.Now;
+        }
+        #endregion 辅助方法
 
     }
 }

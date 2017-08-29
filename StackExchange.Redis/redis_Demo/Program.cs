@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace redis_Demo
 {
@@ -148,23 +150,43 @@ namespace redis_Demo
             //RedisHelper.KeyRename("string", "gnirts", RedisFolderEnum.Folder1, RedisDBEnum.One);
             #endregion
 
-
-
-            //var a= RedisHelper.StringGet("AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:1",RedisFolderEnum.Folder7);      
-
-            //var a = RedisHelper.StringGet("q\x1C\xD3\x89\xEE>\xC7<\x90\xCB\xC9\xBFo\xC7\x8A\xA051");
-            for (int i = 1; i < 1000; i++)
+            #region Lock
+            var db = RedisHelper.Manager.GetDatabase();
+            // AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:1  原子锁
+            if (db.LockTake("AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin", "1", TimeSpan.FromSeconds(10)))
             {
-                //var a = RedisHelper.StringGet("q\x1C\xD3\x89\xEE>\xC7<\x90\xCB\xC9\xBFo\xC7\x8A\xA051");
-                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin:{i}");
-
-                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.TableCoinsStatistic.DayTakeCoins:{i}");
-                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.TableCoinsStatistic.DayPutCoins:{i}");
-                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.CoinsDayStatistic.DayTakeCoins:{i}");
-                RedisHelper.KeyDelete($"AtomicOperation_YChain.AlphaWallet.Model.PO.CoinsDayStatistic.DayPutCoins:{i}");
-                
+                try
+                {
+                    Console.WriteLine("Working..........");
+                    Thread.Sleep(5000);
+                }
+                finally
+                {
+                    db.LockRelease("AtomicOperation_YChain.AlphaWallet.Model.PO.User.RemainderCoin", "1");
+                }
             }
+            #endregion
 
+            #region 发布订阅            
+            Console.WriteLine("请输入发布订阅类型?1:发布；2：订阅");
+            var type = Console.ReadLine();
+            if (type == "1")
+            {
+                Pub();
+            }
+            else if (type == "2")
+            {
+                Sub();
+            }
+            #endregion
+
+            #region Transaction
+            var tran = RedisHelper.CreateTransaction();
+            tran.StringSetAsync("test1", "xiaopotian");
+            tran.StringSetAsync("test2", "xiaopangu");
+            var commit = tran.ExecuteAsync();
+            Console.WriteLine(commit);
+            #endregion
 
             Console.WriteLine();
             Console.ReadLine();
@@ -174,6 +196,30 @@ namespace redis_Demo
             public int Id { get; set; }
             public string Name { get; set; }
             public string Class { get; set; }
+        }
+
+        static async Task Pub()
+        {
+            Console.WriteLine("请输入要发布向哪个通道？");
+            var channel = Console.ReadLine();
+
+            await Task.Delay(10);
+            for (int i = 0; i < 10; i++)
+            {
+                await RedisHelper.PublishAsync(channel, i.ToString());
+            }
+
+        }
+
+        static async Task Sub()
+        {
+            Console.WriteLine("请输入您要订阅哪个通道的信息？");
+            var channelKey = Console.ReadLine();
+            await RedisHelper.SubscribeAsync(channelKey, (channel, message) =>
+            {
+                Console.WriteLine("接受到发布的内容为：" + message);
+            });
+            Console.WriteLine("您订阅的通道为：<< " + channelKey + " >> ! 请耐心等待消息的到来！！");
         }
     }
 }

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abea0e09-bfaf-4779-8e38-2c74641c789a" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Form1.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RedisEdit/Form1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <marker date="1502878405548" expanded="false" signature="6:231" ph="..." />
+                <marker date="1502878405548" expanded="true" signature="252:2130" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="296:2128" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="329:384" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="447:736" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="799:1016" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="1079:1415" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="1260:1352" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="1478:2122" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="1549:2059" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="1613:2045" ph="{...}" />
+                <marker date="1502878405548" expanded="true" signature="1891:2007" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45EAD1F4-811A-423E-B2A7-62E440515A4E/be/b7417e4b/Convert.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/RedisEdit/RedisHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RedisEdit/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RedisEdit/RedisEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RedisEdit/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RedisEdit/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2220BE4-C5E0-4E7E-B9F0-3ACEE71A4BD8/60/33399480/MessageBox.cs" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45EAD1F4-811A-423E-B2A7-62E440515A4E/be/b7417e4b/Convert.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2220BE4-C5E0-4E7E-B9F0-3ACEE71A4BD8/60/33399480/MessageBox.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redis_Demo (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RedisEdit" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redis_Demo (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.RedisEdit">
+    <configuration default="false" name="RedisEdit" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RedisEdit/RedisEdit.csproj" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5.2" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/RedisEdit/bin/Debug/RedisEdit.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RedisEdit/bin/Debug" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.RedisEdit" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.RedisEdit" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abea0e09-bfaf-4779-8e38-2c74641c789a" name="Default" comment="" />
+      <created>1502880422615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1502880422615</updated>
+      <workItem from="1502880424806" duration="644000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="644000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1928" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45EAD1F4-811A-423E-B2A7-62E440515A4E/be/b7417e4b/Convert.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1000">
+          <caret line="2065" column="22" lean-forward="false" selection-start-line="2065" selection-start-column="22" selection-end-line="2065" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisEdit/RedisHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="130" lean-forward="false" selection-start-line="19" selection-start-column="130" selection-end-line="19" selection-end-column="130" />
+          <folding>
+            <marker date="1501576831132" expanded="false" signature="6:217" ph="..." />
+            <marker date="1501576831132" expanded="true" signature="239:30893" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="246:296" ph="/// Redis 帮助类 ... " />
+            <marker date="1501576831132" expanded="true" signature="332:30891" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="863:1740" ph="单例模式" />
+            <marker date="1501576831132" expanded="true" signature="927:1318" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="953:1308" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="1003:1263" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="1407:1721" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="1473:1543" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="1750:4379" ph="辅助方法" />
+            <marker date="1501576831132" expanded="true" signature="1771:1919" ph="/// 获取要操作的库 ... " />
+            <marker date="1501576831132" expanded="true" signature="1977:2179" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2030:2092" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2109:2169" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2234:2382" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2440:2677" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2495:2558" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2575:2667" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2744:3027" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="2839:2990" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="3118:3440" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="3174:3285" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="3302:3430" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="3450:3696" ph="/// 获得枚举的Description ... " />
+            <marker date="1501576831132" expanded="true" signature="3786:4360" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="3920:3977" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="4224:4281" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="4389:8018" ph="Key（通用）" />
+            <marker date="1501576831132" expanded="true" signature="4413:4604" ph="/// 是否存在 ... " />
+            <marker date="1501576831132" expanded="true" signature="4738:5065" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="4764:4967" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="4997:5055" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="5075:5317" ph="/// 设置过期时间 ... " />
+            <marker date="1501576831132" expanded="true" signature="5466:5823" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="5492:5725" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="5755:5813" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="5833:6099" ph="/// 修改键 ... " />
+            <marker date="1501576831132" expanded="true" signature="6248:6630" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="6274:6532" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="6562:6620" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="6640:6861" ph="/// 删除 ... " />
+            <marker date="1501576831132" expanded="true" signature="6995:7322" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="7021:7224" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="7254:7312" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="7332:7556" ph="/// 批量删除 ... " />
+            <marker date="1501576831132" expanded="true" signature="7697:7999" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="7723:7905" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="7935:7989" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="8028:12279" ph="String" />
+            <marker date="1501576831132" expanded="true" signature="8051:8375" ph="/// 添加单个 ... " />
+            <marker date="1501576831132" expanded="true" signature="8548:8779" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="8789:9062" ph="/// 批量添加 ... " />
+            <marker date="1501576831132" expanded="true" signature="9222:9715" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="9442:9621" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="9725:10094" ph="/// 添加对象 ... " />
+            <marker date="1501576831132" expanded="true" signature="10263:10505" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="10515:10738" ph="/// 获取单个 ... " />
+            <marker date="1501576831132" expanded="true" signature="10874:11061" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="11071:11295" ph="/// 获取多个 ... " />
+            <marker date="1501576831132" expanded="true" signature="11444:11610" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="11620:11890" ph="/// 获取对象 ... " />
+            <marker date="1501576831132" expanded="true" signature="12024:12260" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="12289:21757" ph="List" />
+            <marker date="1501576831132" expanded="true" signature="12310:12667" ph="/// 获取 ... " />
+            <marker date="1501576831132" expanded="true" signature="12839:13085" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="13095:13408" ph="/// 获取指定 ... " />
+            <marker date="1501576831132" expanded="true" signature="13559:13804" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="13814:14137" ph="/// 替换指定 ... " />
+            <marker date="1501576831132" expanded="true" signature="14300:14512" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="14522:15056" ph="/// 删除指定 ... " />
+            <marker date="1501576831132" expanded="true" signature="15219:15434" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="15444:15803" ph="/// 指定位置之后插入 ... " />
+            <marker date="1501576831132" expanded="true" signature="15964:16197" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="16207:16566" ph="/// 指定位置之前插入 ... " />
+            <marker date="1501576831132" expanded="true" signature="16728:16962" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="16972:17263" ph="/// 入栈（后插入的在List前面） ... " />
+            <marker date="1501576831132" expanded="true" signature="17412:17622" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="17632:17958" ph="/// 批量入栈（后插入的在List前面） ... " />
+            <marker date="1501576831132" expanded="true" signature="18114:18405" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="18415:18698" ph="/// 出栈（删除最前面的一个元素并返回） ... " />
+            <marker date="1501576831132" expanded="true" signature="18834:19069" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="19079:19370" ph="/// 入队（后插入的在List后面） ... " />
+            <marker date="1501576831132" expanded="true" signature="19520:19731" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="19741:20067" ph="/// 批量入队（后插入的在List后面） ... " />
+            <marker date="1501576831132" expanded="true" signature="20224:20516" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="20526:20809" ph="/// 出队（删除最后面的一个元素并返回） ... " />
+            <marker date="1501576831132" expanded="true" signature="20946:21182" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="21192:21415" ph="/// 获取个数 ... " />
+            <marker date="1501576831132" expanded="true" signature="21550:21738" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="21767:26495" ph="Hash" />
+            <marker date="1501576831132" expanded="true" signature="21788:22142" ph="/// 添加 ... " />
+            <marker date="1501576831132" expanded="true" signature="22298:22508" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="22518:22835" ph="/// 获取特定 ... " />
+            <marker date="1501576831132" expanded="true" signature="22983:23226" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="23236:23554" ph="/// 批量获取 ... " />
+            <marker date="1501576831132" expanded="true" signature="23715:23956" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="23966:24236" ph="/// 获取所有 ... " />
+            <marker date="1501576831132" expanded="true" signature="24381:24569" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="24579:24849" ph="/// 删除特定 ... " />
+            <marker date="1501576831132" expanded="true" signature="25000:25197" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="25207:25478" ph="/// 批量删除 ... " />
+            <marker date="1501576831132" expanded="true" signature="25640:25848" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="25858:26128" ph="/// 是否存在 ... " />
+            <marker date="1501576831132" expanded="true" signature="26279:26476" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="26505:30884" ph="Zset" />
+            <marker date="1501576831132" expanded="true" signature="26526:26880" ph="/// 添加 ... " />
+            <marker date="1501576831132" expanded="true" signature="27043:27263" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="27273:27675" ph="/// 获取 ... " />
+            <marker date="1501576831132" expanded="true" signature="27889:28155" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="28165:28475" ph="/// 删除 ... " />
+            <marker date="1501576831132" expanded="true" signature="28627:28843" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="28853:29126" ph="/// 批量删除（根据对象） ... " />
+            <marker date="1501576831132" expanded="true" signature="29285:29579" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="29589:29908" ph="/// 批量删除（根据score删除） ... " />
+            <marker date="1501576831132" expanded="true" signature="30081:30299" ph="{...}" />
+            <marker date="1501576831132" expanded="true" signature="30309:30532" ph="/// 获取总数 ... " />
+            <marker date="1501576831132" expanded="true" signature="30672:30865" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisEdit/Properties/Settings.settings">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisEdit/Form1.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-982">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisEdit/Form1.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1502878404527" expanded="true" signature="19:16428" ph="{...}" />
+            <marker date="1502878404527" expanded="true" signature="49:16426" ph="{...}" />
+            <marker date="1502878404527" expanded="true" signature="64:122" ph="/// 必需的设计器变量。 ... " />
+            <marker date="1502878404527" expanded="true" signature="200:333" ph="/// 清理所有正在使用的资源。 ... " />
+            <marker date="1502878404527" expanded="true" signature="389:563" ph="{...}" />
+            <marker date="1502878404527" expanded="true" signature="450:516" ph="{...}" />
+            <marker date="1502878404527" expanded="true" signature="573:15078" ph="Windows 窗体设计器生成的代码" />
+            <marker date="1502878404527" expanded="true" signature="609:704" ph="/// 设计器支持所需的方法 - 不要修改 ... " />
+            <marker date="1502878404527" expanded="true" signature="747:15058" ph="{...}" />
+            <marker date="1502878404527" expanded="true" signature="2570:2611" ph="/* label1 ... */" />
+            <marker date="1502878404527" expanded="true" signature="2917:2958" ph="/* label2 ... */" />
+            <marker date="1502878404527" expanded="true" signature="3265:3306" ph="/* txtkey ... */" />
+            <marker date="1502878404527" expanded="true" signature="3629:3673" ph="/* txtUserId ... */" />
+            <marker date="1502878404527" expanded="true" signature="3953:3994" ph="/* btnGet ... */" />
+            <marker date="1502878404527" expanded="true" signature="4390:4431" ph="/* label3 ... */" />
+            <marker date="1502878404527" expanded="true" signature="4736:4779" ph="/* lblValue ... */" />
+            <marker date="1502878404527" expanded="true" signature="5095:5136" ph="/* btnSet ... */" />
+            <marker date="1502878404527" expanded="true" signature="5532:5573" ph="/* label6 ... */" />
+            <marker date="1502878404527" expanded="true" signature="5877:5923" ph="/* txtSetValue ... */" />
+            <marker date="1502878404527" expanded="true" signature="6217:6266" ph="/* txtDelMaxValue ... */" />
+            <marker date="1502878404527" expanded="true" signature="6580:6621" ph="/* btndel ... */" />
+            <marker date="1502878404527" expanded="true" signature="7017:7058" ph="/* label4 ... */" />
+            <marker date="1502878404527" expanded="true" signature="7370:7411" ph="/* label5 ... */" />
+            <marker date="1502878404527" expanded="true" signature="7807:7848" ph="/* label7 ... */" />
+            <marker date="1502878404527" expanded="true" signature="8207:8245" ph="/* set ... */" />
+            <marker date="1502878404527" expanded="true" signature="8679:8720" ph="/* select ... */" />
+            <marker date="1502878404527" expanded="true" signature="9181:9225" ph="/* groupBox1 ... */" />
+            <marker date="1502878404527" expanded="true" signature="9829:9867" ph="/* del ... */" />
+            <marker date="1502878404527" expanded="true" signature="10306:10345" ph="/* del2 ... */" />
+            <marker date="1502878404527" expanded="true" signature="10903:10948" ph="/* chklistKey ... */" />
+            <marker date="1502878404527" expanded="true" signature="11059:11990" ph="{...}" />
+            <marker date="1502878404527" expanded="true" signature="12239:12280" ph="/* selDel ... */" />
+            <marker date="1502878404527" expanded="true" signature="12681:12733" ph="/* txtSelDelMaxValue ... */" />
+            <marker date="1502878404527" expanded="true" signature="13066:13107" ph="/* label8 ... */" />
+            <marker date="1502878404527" expanded="true" signature="13420:13461" ph="/* label9 ... */" />
+            <marker date="1502878404527" expanded="true" signature="13923:13967" ph="/* RedisEdit ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisEdit/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding>
+            <marker date="1501576740529" expanded="false" signature="6:101" ph="..." />
+            <marker date="1501576740529" expanded="true" signature="103:150" ph="/* 有关程序集的一般信息由以下 ... */" />
+            <marker date="1501576740529" expanded="true" signature="455:560" ph="/* 将 ComVisible 设置为 false 将使此程序集中的类型 ... */" />
+            <marker date="1501576740529" expanded="true" signature="686:855" ph="/* 程序集的版本信息由下列四个值组成: ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisEdit/RedisEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <marker date="1501576831130" expanded="true" signature="6:144" ph="..." />
+            <marker date="1501576831130" expanded="true" signature="166:2651" ph="{...}" />
+            <marker date="1501576831130" expanded="true" signature="173:224" ph="/// Redis缓存数据库 ... " />
+            <marker date="1501576831130" expanded="true" signature="252:1614" ph="{...}" />
+            <marker date="1501576831130" expanded="true" signature="267:320" ph="/// 第一个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="343:396" ph="/// 第二个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="419:472" ph="/// 第三个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="497:550" ph="/// 第四个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="574:640" ph="/// 第五个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="664:717" ph="/// 第六个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="740:793" ph="/// 第七个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="818:871" ph="/// 第八个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="896:949" ph="/// 第九个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="973:1026" ph="/// 第十个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1049:1103" ph="/// 第十一个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1129:1183" ph="/// 第十二个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1209:1263" ph="/// 第十三个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1291:1345" ph="/// 第十四个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1373:1427" ph="/// 第十五个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1454:1508" ph="/// 第十六个库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1535:1592" ph="/// 配置文件指定的库 ... " />
+            <marker date="1501576831130" expanded="true" signature="1620:1671" ph="/// Redis缓存文件夹 ... " />
+            <marker date="1501576831130" expanded="true" signature="1703:2648" ph="{...}" />
+            <marker date="1501576831130" expanded="true" signature="1718:1770" ph="/// 根目录 ... " />
+            <marker date="1501576831130" expanded="true" signature="1820:1874" ph="/// 测试目录1 ... " />
+            <marker date="1501576831130" expanded="true" signature="1930:1984" ph="/// 测试目录2 ... " />
+            <marker date="1501576831130" expanded="true" signature="2040:2094" ph="/// 测试目录3 ... " />
+            <marker date="1501576831130" expanded="true" signature="2150:2204" ph="/// 测试目录4 ... " />
+            <marker date="1501576831130" expanded="true" signature="2260:2314" ph="/// 测试目录5 ... " />
+            <marker date="1501576831130" expanded="true" signature="2370:2424" ph="/// 测试目录6 ... " />
+            <marker date="1501576831130" expanded="true" signature="2480:2534" ph="/// 测试目录6 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/45EAD1F4-811A-423E-B2A7-62E440515A4E/be/b7417e4b/Convert.cs.dd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2220BE4-C5E0-4E7E-B9F0-3ACEE71A4BD8/60/33399480/MessageBox.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3870">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisEdit/Form1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <marker date="1502878405548" expanded="false" signature="6:231" ph="..." />
+            <marker date="1502878405548" expanded="true" signature="252:2130" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="296:2128" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="329:384" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="447:736" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="799:1016" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="1079:1415" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="1260:1352" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="1478:2122" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="1549:2059" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="1613:2045" ph="{...}" />
+            <marker date="1502878405548" expanded="true" signature="1891:2007" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
