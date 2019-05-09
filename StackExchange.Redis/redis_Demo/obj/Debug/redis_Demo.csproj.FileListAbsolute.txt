@@ -18,3 +18,15 @@ D:\lixin\GitHub\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\StackExchange
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.csprojResolveAssemblyReference.cache
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.exe
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.pdb
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\redis_Demo.exe.config
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\redis_Demo.exe
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\redis_Demo.pdb
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\Newtonsoft.Json.dll
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\StackExchange.Redis.dll
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\Newtonsoft.Json.xml
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\bin\Debug\StackExchange.Redis.xml
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.csprojAssemblyReference.cache
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.csproj.CoreCompileInputs.cache
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.csproj.CopyComplete
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.exe
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\redis_Demo\obj\Debug\redis_Demo.pdb

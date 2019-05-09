@@ -11,3 +11,17 @@ D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.Prop
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.csproj.GenerateResource.Cache
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.exe
 D:\lixin\GitHub\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.pdb
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\RedisEdit.exe.config
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\RedisEdit.exe
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\RedisEdit.pdb
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\Newtonsoft.Json.dll
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\StackExchange.Redis.dll
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\Newtonsoft.Json.xml
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\bin\Debug\StackExchange.Redis.xml
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.Properties.Resources.resources
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.csproj.GenerateResource.cache
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.csproj.CoreCompileInputs.cache
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.csproj.CopyComplete
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.exe
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.pdb
+E:\lixin\Net\github\RedisDemo\StackExchange.Redis\RedisEdit\obj\Debug\RedisEdit.AnTong.resources

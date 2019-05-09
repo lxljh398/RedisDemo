@@ -15,8 +15,8 @@ namespace redis_Demo
     /// </summary>
     public static class RedisHelper
     {
-        private static string _conn = ConfigurationManager.AppSettings["redis_connection_string"] ?? "127.0.0.1:6379";
-        private static string _pwd = ConfigurationManager.AppSettings["redis_connection_pwd"] ?? "123456";
+        private static string _conn = ConfigurationManager.AppSettings["redis_connection_string"] ?? "192.168.1.140:6379";
+        private static string _pwd = ConfigurationManager.AppSettings["redis_connection_pwd"] ?? "antoine123!@#";
         private static int _store_db = string.IsNullOrEmpty(ConfigurationManager.AppSettings["redis_store_db"]) ? -1 : Convert.ToInt32(ConfigurationManager.AppSettings["redis_store_db"]);
 
         static ConnectionMultiplexer _redis;
